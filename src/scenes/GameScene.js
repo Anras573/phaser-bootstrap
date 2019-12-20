@@ -17,7 +17,7 @@ class GameScene extends Phaser.Scene {
       targets: logo,
       y: 450,
       duration: 2000,
-      ease: 'Poer2',
+      ease: 'Power2',
       yoyo: true,
       loop: -1
     })
