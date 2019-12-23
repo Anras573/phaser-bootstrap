@@ -10,7 +10,7 @@ module.exports = {
     vendor: 'phaser'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       template: './src/index.html',
