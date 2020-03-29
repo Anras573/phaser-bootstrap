@@ -24,8 +24,8 @@ module.exports = {
       }
     }),
     new webpack.DefinePlugin({
-      'CANVAS_RENDERER': JSON.stringify(true),
-      'WEBGL_RENDERER': JSON.stringify(true)
+      CANVAS_RENDERER: JSON.stringify(true),
+      WEBGL_RENDERER: JSON.stringify(true)
     })
   ],
   output: {
@@ -44,6 +44,10 @@ module.exports = {
           presets: ['@babel/preset-env']
         }
       }
+    },
+    {
+      test: /\.(gif|png|jpe?g|svg|xml)$/i,
+      use: 'file-loader'
     }]
   },
   optimization: {
