@@ -1,6 +1,5 @@
 import Phaser from 'phaser'
 import logo from '../../assets/Phaser-Logo-Small.png'
-import { dist } from '../helpers/constants'
 
 class GameScene extends Phaser.Scene {
   constructor () {
@@ -9,7 +8,7 @@ class GameScene extends Phaser.Scene {
 
   init () {}
   preload () {
-    this.load.image('logo', dist + '/' + logo)
+    this.load.image('logo', logo)
   }
 
   create () {

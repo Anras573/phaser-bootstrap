@@ -10,7 +10,9 @@ module.exports = {
     vendor: 'phaser'
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false
+    }),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       template: './src/index.html',
@@ -29,9 +31,7 @@ module.exports = {
     })
   ],
   output: {
-    pathinfo: true,
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [{
@@ -52,7 +52,6 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      name: 'vendor',
       chunks: 'all'
     }
   }
