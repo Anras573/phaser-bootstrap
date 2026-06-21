@@ -16,7 +16,7 @@
     "@babel/preset-env": "^7.27.2",
     "babel-loader": "^9.2.1",
     "browser-sync": "^2.29.3",
-    "browser-sync-webpack-plugin": "^2.3.0",
+    "browser-sync-webpack-plugin": "^2.4.0",
     "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
